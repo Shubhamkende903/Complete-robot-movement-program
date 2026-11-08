@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main()
+{
+    int choice;
+
+    printf("\n1. Forward");
+    printf("\n2. Backward");
+    printf("\n3. Left");
+    printf("\n4. Right");
+    printf("\n5. Stop");
+
+    printf("\nEnter your choice: ");
+    scanf("%d", &choice);
+
+    switch(choice)
+    {
+        case 1:
+            printf("Robot moving Forward");
+            break;
+
+        case 2:
+            printf("Robot moving Backward");
+            break;
+
+        case 3:
+            printf("Robot moving Left");
+            break;
+
+        case 4:
+            printf("Robot moving Right");
+            break;
+
+        case 5:
+            printf("Robot Stopped");
+            break;
+
+        default:
+            printf("Invalid Choice");
+    }
+
+    return 0;
+}
